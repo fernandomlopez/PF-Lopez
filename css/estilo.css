@@ -133,13 +133,12 @@ label.menu {
 }
 
 .imgbartender {
-     height: 100vh;
      grid-area: img;
 }
 
 .imgbartender img {
-     height: 100vh;
-     width: 82vh;
+     height: 90vh;
+     width: 75vh;
      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -233,14 +232,14 @@ label.menu {
 
 .contenedorcursos1,
 .contenedorcurso3 {
-     height: 110vh;
+     height: 100vh;
      display: flex;
      justify-content: space-evenly;
      align-items: center;
 }
 
 .contenedorcurso2 {
-     height: 110vh;
+     height: 100vh;
      display: flex;
      justify-content: space-evenly;
      flex-direction: row-reverse;
@@ -371,26 +370,27 @@ footer {
 
 @media (max-width:667px) {
      header {
+          height: 15vh;
           position: absolute;
           width: 100%;
+          display: flex;
+          justify-content: space-evenly;
      }
 
      header img {
-          margin-left: 15px;
-          position: left;
+          margin-left: 20px;
           height: 8vh;
           width: 8vh;
      }
 
      nav {
+          height: 15vh;
           width: 80%;
-          margin-top: 225px;
           padding-left: 0px;
      }
 
      ul {
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-          height: 48vh;
           margin: 0px;
           margin-right: 50px;
           padding-left: 0px;
@@ -401,8 +401,8 @@ footer {
      }
 
      i {
-          padding-top: 65px;
-          padding-left: 250px;
+          padding-top: 40px;
+          padding-left: 7em;
      }
 
      label.menu {
@@ -410,9 +410,8 @@ footer {
           font-size: 2em;
           color: aquamarine;
           cursor: pointer;
-          margin-top: 15px;
+          justify-items: center;
           margin-bottom: 0px;
-
      }
 
      #check-menu:checked~ul {
@@ -428,6 +427,10 @@ footer {
           font-size: 2.5em;
      }
 
+     .container1 {
+          height: 50vh;
+     }
+
      .container1 h2 {
           font-size: 1.5em;
      }
@@ -438,8 +441,7 @@ footer {
      }
 
      .nosotros {
-          height: 158vh;
-          width: 56vh;
+          height: 100vh;
           grid-template-columns: 1fr;
           grid-template-rows: 50% repeat(4, 1fr);
           grid-template-areas:
@@ -451,64 +453,71 @@ footer {
      }
 
      .imgbartender {
-          height: 75vh;
-          width: 56vh;
+          height: 45vh;
+          display: flex;
+          justify-content: center;
      }
 
      .imgbartender img {
-          height: 75vh;
-          width: 56vh;
+      height: 42vh;
+      width: 45vh;
      }
 
      .presentacion {
-          height: 100vh;
-          margin-top: 30px;
+          display: block;
+          height: 50vh;
+          width: auto;
           padding-top: 10px;
           padding-left: 10px;
      }
 
      .presentacion h3 {
-          font-size: 1.5em;
+          font-size: 0.8em;
+          padding: 0px 5px;
      }
 
      .presentacion p {
-          font-size: 14px;
+          font-size: 0.65em;
+          padding: 0px 5px;
      }
 
      .containerins {
           display: block;
-          height: 100vh;
-          margin-top: 100px;
-          margin-bottom: 150px;
-          margin-right: 43px;
-          padding: 75px 12px;
+          height: 60vh;
+          margin: 0px;
+          padding: 0px;
      }
-
      .containerins h2 {
-          font-size: 1em;
+          font-size: 0.75em;
           text-align: center;
+          margin-top: 10px;
      }
 
      .inscribite {
           flex-direction: column;
+          margin: 0px 50px 0px;
      }
 
      .inscribite h3 {
-          font-size: 0.8em;
-          margin: 10px 0px;
+          font-size: 0.62em;
+          margin: 8px 0px;
      }
 
      .inscribite p {
-          font-size: 0.7em;
-          margin-left: 10px;
+          font-size: 0.52em;
+          margin: 0px
      }
 
      .contactanos,
      .info,
      .practica {
           padding: 0px;
-          margin: 10px;
-          margin-left: 10px;
+          margin: 8px 25px;
+     }
+
+     .inscribite img {
+          height: 4vh;
+          width: 4vh;
      }
 
      /* SECTOR CURSOS */
@@ -518,7 +527,7 @@ footer {
           .contenedorcursos1,
           .contenedorcurso2,
           .contenedorcurso3 {
-               height: 120vh;
+               height: 100vh;
                width: 54vh;
                flex-direction: column;
                justify-content: space-evenly;
@@ -642,12 +651,21 @@ footer {
 
      @media(max-width:667px) {
           footer {
-                    height: 50vh;
-                    flex-direction: column;
-                    justify-content: space-around;
-               }
-     
-               footer h4 {
-                    order: -1;
-               }
-          }}
+               height: 30vh;
+               flex-direction: column;
+               justify-content: space-evenly;
+          }
+
+          footer h4 {
+               font-size: 0.8em;
+               order: -1;
+          }
+          footer p {
+               font-size: 0.65em;
+          }
+          footer img { 
+               height: 10vh;
+               width: 10vh;
+          }
+     }
+}

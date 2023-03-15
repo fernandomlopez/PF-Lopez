@@ -642,12 +642,12 @@ footer {
 
      @media(max-width:667px) {
           footer {
-               height: 50vh;
-               flex-direction: column;
-               justify-content: space-around;
-          }
-
-          footer h4 {
-               order: -1;
-          }
-     }
+                    height: 50vh;
+                    flex-direction: column;
+                    justify-content: space-around;
+               }
+     
+               footer h4 {
+                    order: -1;
+               }
+          }}

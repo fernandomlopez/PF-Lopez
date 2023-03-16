@@ -459,8 +459,8 @@ footer {
      }
 
      .imgbartender img {
-      height: 42vh;
-      width: 45vh;
+          height: 42vh;
+          width: 45vh;
      }
 
      .presentacion {
@@ -477,7 +477,7 @@ footer {
      }
 
      .presentacion p {
-          font-size: 0.65em;
+          font-size: 0.7em;
           padding: 0px 5px;
      }
 
@@ -487,6 +487,7 @@ footer {
           margin: 0px;
           padding: 0px;
      }
+
      .containerins h2 {
           font-size: 0.75em;
           text-align: center;
@@ -527,86 +528,86 @@ footer {
           .contenedorcursos1,
           .contenedorcurso2,
           .contenedorcurso3 {
-               height: 100vh;
-               width: 54vh;
+               height: 70vh;
+               width: auto;
                flex-direction: column;
-               justify-content: space-evenly;
                margin: 0 auto;
+          }
+
+          .cursosimg img {
+               height: 25vh;
           }
 
           .curso1,
           .curso2,
           .curso3 {
-               height: 60vh;
-               width: 52vh;
-               margin: 0 auto;
-          }
-
-          .cursosimg img {
-               height: 40vh;
-               width: 50vh;
+               height: 35vh;
+               width: auto;
+               margin: 10px;
           }
 
           .curso1 h3,
           .curso2 h3,
           .curso3 h3 {
-               height: 50vh;
+               font-size: 1.1em;
                text-align: center;
-               font-size: 1.3em;
+               margin: 5px;
+               padding: 0px;
           }
 
           .curso1 p,
           .curso2 p,
           .curso3 p {
-               font-size: 0.9em;
-               text-align: initial;
-               padding: 0px 10px;
+               font-size: 0.7em;
+               margin: 0px;
+               padding: 0px 30px;
           }
      }
 
      /* SECTOR SERVICIOS */
      @media (max-width:667px) {
           .container1ser {
-               height: 50vh;
-               width: 54vh;
+               height: 30vh;
+               width: auto;
           }
 
           .container1ser h2 {
-               font-size: 1.8em;
+               font-size: 1.6em;
                padding-left: 10px;
           }
 
           .contenedorasesora,
           .contenedorbarras {
-               height: 90vh;
-               width: 54vh;
+               height: 70vh;
+               width: auto;
                flex-direction: column;
                margin: 0 auto;
           }
 
           .asesora img,
           .barras img {
-               width: 50vh;
-               height: 45vh;
+               height: 25vh;
+               width: auto;
           }
 
           .asesorainfo,
           .barrasinfo {
-               width: 52vh;
+               height: 55vh;
+               width: auto;
           }
 
           .asesorainfo h3,
           .barrasinfo h3 {
-               width: 52vh;
+               width: auto;
                font-size: 1.2em;
                text-align: center;
           }
 
           .asesorainfo p,
           .barrasinfo p {
-               width: 52vh;
-               padding-left: 10px;
-               font-size: 0.9em;
+               font-size: 0.8em;
+               margin: 0px;
+               padding: 0px 20px;
                text-align: initial;
           }
      }
@@ -614,36 +615,47 @@ footer {
      /* SECTOR CONTACTO */
 
      @media(max-width:667px) {
+
           .formcontacto {
-               height: 180vh !important;
+               height: 100vh !important;
+          }
+
+          iframe {
+               height: 30vh;
+               width: auto;
+               margin-top: 40px;
           }
 
           .conta {
-               height: 20vh;
-               margin-top: 40px;
+               height: 20vh !important;
+               width: 100% !important;
+               margin: 0px !important;
+               padding: 0px 20px !important;
           }
 
           .wpp img,
           .email img {
-               height: 3.8vh !important;
-               width: 5.5vh !important;
+               height: 3.5vh !important;
+               width: 4.7vh !important;
           }
 
           .wpp,
           .email {
                height: 10vh;
-               width: 45vh;
+               width: auto;
           }
 
           .wpp p,
           .email p {
-               font-size: 1.18em !important;
+               font-size: 1em !important;
           }
 
-          iframe {
-               height: 45vh;
-               width: 50vh;
-               margin-top: 70px;
+          .formpropio input {
+               height: 3vh !important;
+               margin-bottom: 3px !important;
+          }
+          .formpropio textarea {
+               height: 23vh !important;
           }
      }
 
@@ -660,10 +672,12 @@ footer {
                font-size: 0.8em;
                order: -1;
           }
+
           footer p {
                font-size: 0.65em;
           }
-          footer img { 
+
+          footer img {
                height: 10vh;
                width: 10vh;
           }

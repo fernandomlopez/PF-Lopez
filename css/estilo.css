@@ -363,7 +363,7 @@ footer {
      align-items: center;
 }
 
-/*MEDIA QUERIES*/
+/*MEDIA QUERIES 667px */
 
 /*SECTOR HOME/NOSOTROS*/
 
@@ -401,8 +401,8 @@ footer {
      }
 
      i {
-          padding-top: 40px;
-          padding-left: 7em;
+          padding-top: 45px;
+          padding-left: 7.5em;
      }
 
      label.menu {
@@ -654,6 +654,7 @@ footer {
                height: 3vh !important;
                margin-bottom: 3px !important;
           }
+
           .formpropio textarea {
                height: 23vh !important;
           }
@@ -681,5 +682,253 @@ footer {
                height: 10vh;
                width: 10vh;
           }
+     }
+}
+
+
+/*MEDIA QUERIES 360px */
+    /* SECTOR HOME*/
+@media(max-width:360px) {
+     header img {
+          height: 3.5vh;
+          width: 3.5vh;
+     }
+
+     i {
+          padding-top: 35px;
+     }
+
+     label.menu {
+          font-size: 1.5em;
+     } 
+     .hero {
+          height:75vh;
+     }
+     .hero h1 {
+          font-size: 1.8em;
+     }
+     .container1 {
+          height: 35vh;
+     }
+
+     .container1 h2 {
+          font-size: 1.2em;
+     }
+
+     .container1 p {
+          font-size: 0.7em;
+          padding: 0px 20px;
+     }
+
+     .nosotros {
+          height: 100vh;
+          grid-template-columns: 1fr;
+          grid-template-rows: 35% repeat(4, 1fr);
+          grid-template-areas:
+               "img"
+               "presentacion"
+               "presentacion"
+               "presentacion"
+               "presentacion";
+     }
+
+     .imgbartender {
+          height: 35vh;
+     }
+
+     .imgbartender img {
+          height: 35vh;
+          width: 35vh;
+     }
+
+     .presentacion {
+          height: 65vh;
+          width: auto;
+          padding-top: 5px;
+          padding-left: 5px;
+     }
+
+     .presentacion h3 {
+          font-size: 0.75em;
+          padding: 3px 5px 0px;
+     }
+
+     .presentacion p {
+          font-size: 0.65em;
+          padding: 0px 5px;
+     }
+
+     .containerins {
+          height: 60vh;
+          margin: 0px;
+          padding: 0px;
+     }
+
+     .containerins h2 {
+          font-size: 0.65em;
+          margin-top: 8px;
+     }
+
+     .inscribite {
+          margin: 0px 40px 0px;
+     }
+
+     .inscribite h3 {
+          font-size: 0.6em;
+          margin: 8px 0px;
+     }
+
+     .inscribite p {
+          font-size: 0.45em;
+          margin: 0px
+     }
+
+     .contactanos,
+     .info,
+     .practica {
+          padding: 0px;
+          margin: 8px 25px;
+     }
+
+     .inscribite img {
+          height: 4vh;
+          width: 4vh;
+     }
+}
+    /* SECTOR CURSOS */
+
+    @media (max-width:360px) {
+
+     .contenedorcursos1,
+     .contenedorcurso2,
+     .contenedorcurso3 {
+          height: 65vh;
+     }
+
+     .cursosimg img {
+          height: 25vh;
+          margin: 7px 0px;
+     }
+
+     .curso1,
+     .curso2,
+     .curso3 {
+          height: 35vh;
+          margin: 5px;
+     }
+
+     .curso1 h3,
+     .curso2 h3,
+     .curso3 h3 {
+          font-size: 0.8em;
+          text-align: center;
+          margin: 7px;
+          padding: 0px;
+     }
+
+     .curso1 p,
+     .curso2 p,
+     .curso3 p {
+          font-size: 0.52em;
+          margin: 0px;
+          padding: 0px 20px;
+     }
+}
+
+/* SECTOR SERVICIOS */
+@media (max-width:360px) {
+     .container1ser {
+          height: 25vh;
+     }
+
+     .container1ser h2 {
+          font-size: 1.2em;
+          padding-left: 10px;
+     }
+
+     .contenedorasesora,
+     .contenedorbarras {
+          height: 65vh;
+          width: auto;
+          flex-direction: column;
+          margin: 0 auto;
+     }
+
+     .asesora img,
+     .barras img {
+          height: 22vh;
+          width: auto;
+     }
+
+     .asesorainfo,
+     .barrasinfo {
+          height: 55vh;
+     }
+
+     .asesorainfo h3,
+     .barrasinfo h3 {
+          font-size: 1em;
+     }
+
+     .asesorainfo p,
+     .barrasinfo p {
+          font-size: 0.65em;
+     }
+}
+
+/* SECTOR CONTACTO */
+
+@media(max-width:360px) {
+
+     .formcontacto {
+          height: 100vh !important;
+     }
+
+     iframe {
+          height: 30vh;
+          width: 40vh;
+          margin-top: 20px;
+     }
+
+     .conta {
+          height: 13vh !important;
+          width: 100% !important;
+          margin: 0px !important;
+          padding: 0px 20px !important;
+     }
+
+     .wpp img,
+     .email img {
+          height: 3.2vh !important;
+          width: 4.2vh !important;
+     }
+
+     .wpp,
+     .email {
+          height: 6vh;
+          width: auto;
+     }
+
+     .wpp p,
+     .email p {
+          font-size: 0.75em !important;
+     }
+
+     .formpropio input {
+          height: 4vh !important;
+     }
+
+     .formpropio textarea {
+          height: 20vh !important;
+     }
+     .formpropio button {
+          height: 5vh !important;
+          margin-bottom: 0px !important;
+     }
+     .pbut {
+          font-size: 0.7em;
+          text-align: center;
+          align-items: center;
+          margin: 0px;
      }
 }

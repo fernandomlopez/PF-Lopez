@@ -16,49 +16,64 @@ header {
      margin: 0px;
      position: fixed;
      display: flex;
-     justify-content: space-evenly;
+     justify-content: space-around;
      align-items: center;
 }
 
 a {
      font-family: "pt sans narrow";
-     font-size: 30px;
+     font-size: 25px;
      color: rgb(249, 204, 179);
      text-decoration: none;
-}
-
-a:hover {
-     color: whitesmoke;
-}
+     position: relative;
+     margin: 3.5px;
+     padding-left: 10px;
+ }
+ 
+ a:hover {
+     color: white;
+ }
+ 
+a::before {
+     content: "";
+     height: 3px;
+     width: 0%;
+     background:  rgba(41, 169, 201, 0.87);
+     position: absolute;
+     left: 0;
+     bottom: -12px;
+     transition: 0.4s ease-out;
+ }
+ 
+a:hover::before {
+     width: 100%;
+ }
+ 
 
 header .hdr {
      width: 70px;
      height: 70px;
 }
 
-nav {
-     padding-left: 150px;
-}
-
 ul {
      list-style: none;
      display: flex;
      align-items: center;
+     margin-bottom: 0px;
 }
 
 ul li {
-     padding-left: 15px;
+     padding-left: 10px;
 }
 
 nav ul li {
-     padding: 10px 20px
+     padding: 10px 15px
 }
 
 .logoredes {
-     height: 35px;
-     width: 35px;
-     padding-right: 10px;
-     padding-top: 5px;
+     height: 4vh;
+     width: 4vh;
+     margin-bottom: 3px;
 }
 
 #check-menu,
@@ -84,7 +99,7 @@ label.menu {
 
 .hero h1 {
      font-family: "pt sans narrow";
-     font-size: 4.3em;
+     font-size: 3.8em;
      color: rgb(254, 254, 254);
      align-items: center;
      text-align: center;
@@ -101,7 +116,7 @@ label.menu {
 .container1 h2 {
      width: 100%;
      margin: 0px;
-     font-size: 2.5em;
+     font-size: 2.3em;
      font-family: helvetica;
      color: rgb(248, 199, 175);
      display: flex;
@@ -111,12 +126,13 @@ label.menu {
 }
 
 .container1 p {
-     font-size: 1.5em;
+     font-size: 1.3em;
      font-family: tahoma;
      display: block;
      justify-content: center;
      align-items: center;
      text-align: center;
+     margin: 0px 20px;
 }
 
 .nosotros {
@@ -212,8 +228,16 @@ label.menu {
      text-align: center;
 }
 
+.contactanos:hover {
+     box-shadow: 2px 2px 10px rgba(60, 91, 150, 0.5);
+}
 
-
+.info:hover {
+     box-shadow: 2px 2px 10px rgba(60, 91, 150, 0.5);
+}
+.practica:hover {
+     box-shadow: 2px 2px 10px rgba(60, 91, 150, 0.5);
+}
 /* SECTOR CURSOS*/
 .cursosimg img {
      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -362,6 +386,326 @@ footer {
      justify-content: space-around;
      align-items: center;
 }
+
+/*MEDIA QUERIES 768px */
+
+/*SECTOR HOME/NOSOTROS*/
+
+@media (max-width:768px) {
+     header {
+          height: 10vh;
+          position: absolute;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+     }
+
+     header img {
+          margin-left: 15px;
+          height: 8vh;
+          width: 8vh;
+     }
+
+     nav {
+          height: 15vh;
+          width: 80%;
+          padding-left: 0px;
+     }
+
+     ul {
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+          margin: 0px;
+          margin-right: 50px;
+          padding-left: 0px;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          clip-path: circle(0 at center);
+     }
+     i {
+          padding-top: 60px;
+          padding-left: 16em;
+     }
+
+     label.menu {
+          display: block;
+          font-size: 2em;
+          color: aquamarine;
+          cursor: pointer;
+          margin-bottom: 0px;
+     }
+
+     #check-menu:checked~ul {
+          display: block;
+          clip-path: circle(100% at center);
+     }
+
+     a {
+          font-size: 1.3em;
+     }
+
+     .hero {
+          height: 90vh;
+     }
+     .hero h1 {
+          font-size: 3em;
+     }
+
+     .container1 {
+          height: 50vh;
+     }
+
+     .container1 h2 {
+          font-size: 1.9em;
+     }
+
+     .container1 p {
+          font-size: 1.4em;
+          padding: 0px 20px;
+     }
+
+     .nosotros {
+          height: 100vh;
+          grid-template-columns: 1fr;
+          grid-template-rows: 50% repeat(4, 1fr);
+          grid-template-areas:
+               "img"
+               "presentacion"
+               "presentacion"
+               "presentacion"
+               "presentacion";
+     }
+
+     .imgbartender {
+          height: 48vh;
+          display: flex;
+          justify-content: center;
+     }
+
+     .imgbartender img {
+          height: 47vh;
+          width: 45vh;
+     }
+
+     .presentacion {
+          display: block;
+          height: 50vh;
+          width: auto;
+          padding-top: 10px;
+          padding-left: 10px;
+     }
+
+     .presentacion h3 {
+          font-size: 1.4em;
+          padding: 0px 5px;
+     }
+
+     .presentacion p {
+          font-size: 1.1em;
+          padding: 0px 5px;
+     }
+
+     .containerins {
+          display: block;
+          height: 40vh;
+          margin: 0px;
+          padding: 15px 0px;
+     }
+
+     .containerins h2 {
+          font-size: 1.2em;
+          text-align: center;
+          margin-top: 10px;
+     }
+
+     .inscribite {
+          margin: 0px 50px 0px;
+     }
+
+     .inscribite h3 {
+          font-size: 1em;
+          margin: 10px 0px;
+     }
+
+     .inscribite p {
+          font-size: 0.8em;
+          margin: 0px
+     }
+
+     .contactanos,
+     .info,
+     .practica {
+          padding: 0px;
+          margin: 8px 25px;
+     }
+
+     .inscribite img {
+          height: 4vh;
+          width: 4vh;
+     }
+
+/* SECTOR CURSOS */
+
+     @media (max-width:768px) {
+
+          .contenedorcursos1,
+          .contenedorcurso2,
+          .contenedorcurso3 {
+               height: 70vh;
+               width: auto;
+               flex-direction: column;
+               margin: 0 auto;
+          }
+
+          .cursosimg img {
+               height: 30vh;
+          }
+
+          .curso1,
+          .curso2,
+          .curso3 {
+               height: 40vh;
+               width: auto;
+               margin: 10px;
+          }
+
+          .curso1 h3,
+          .curso2 h3,
+          .curso3 h3 {
+               font-size: 1.5em;
+               text-align: center;
+               margin: 5px;
+               padding: 0px;
+          }
+
+          .curso1 p,
+          .curso2 p,
+          .curso3 p {
+               font-size: 1em;
+               margin: 0px;
+               padding: 0px 30px;
+          }
+     }
+
+     /* SECTOR SERVICIOS */
+     @media (max-width:768px) {
+          .container1ser {
+               height: 30vh;
+               width: auto;
+          }
+
+          .container1ser h2 {
+               font-size: 1.9em;
+               padding-left: 10px;
+          }
+
+          .contenedorasesora,
+          .contenedorbarras {
+               height: 70vh;
+               width: auto;
+               flex-direction: column;
+               margin: 0 auto;
+          }
+
+          .asesora img,
+          .barras img {
+               height: 30vh;
+               width: auto;
+          }
+
+          .asesorainfo,
+          .barrasinfo {
+               height: 40vh;
+               width: auto;
+          }
+
+          .asesorainfo h3,
+          .barrasinfo h3 {
+               width: auto;
+               font-size: 1.5em;
+               text-align: center;
+          }
+
+          .asesorainfo p,
+          .barrasinfo p {
+               font-size: 1.2em;
+               margin: 0px;
+               padding: 0px 20px;
+               text-align: initial;
+          }
+     }
+
+     /* SECTOR CONTACTO */
+
+     @media(max-width:768px) {
+
+          .formcontacto {
+               height: 100vh !important;
+          }
+
+          iframe {
+               height: 30vh;
+               width: 50vh;
+               margin-top: 20px;
+          }
+
+          .conta {
+               height: 20vh !important;
+               width: 100% !important;
+               margin: 0px !important;
+               padding: 0px 20px !important;
+          }
+
+          .wpp img,
+          .email img {
+               height: 3.5vh !important;
+               width: 4.7vh !important;
+          }
+
+          .wpp,
+          .email {
+               height: 10vh;
+               width: auto;
+          }
+
+          .wpp p,
+          .email p {
+               font-size: 1.4em !important;
+          }
+
+          .formpropio input {
+               height: 3vh !important;
+               margin-bottom: 3px !important;
+          }
+
+          .formpropio textarea {
+               height: 23vh !important;
+          }
+     }
+     
+         /* SECTOR FOOTER */
+         @media(max-width:768px) {
+          footer {
+               height: 20vh;
+          }
+
+          footer h4 {
+               font-size: 0.85em;
+               order: -1;
+          }
+
+          footer p {
+               font-size: 0.7em;
+          }
+
+          footer img {
+               height: 10vh;
+               width: 10vh;
+          }
+     }
+}
+
+
 
 /*MEDIA QUERIES 667px */
 
@@ -659,7 +1003,6 @@ footer {
                height: 23vh !important;
           }
      }
-
      /* SECTOR FOOTER */
 
      @media(max-width:667px) {

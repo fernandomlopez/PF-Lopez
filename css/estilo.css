@@ -118,8 +118,8 @@ header nav ul a:hover::before {
     clip-path: circle(0 at center);
   }
   header nav ul li .logoredes {
-    height: 3.5vh;
-    width: 3.5vh;
+    height: 3vh;
+    width: 3vh;
   }
   header nav ul li .logoredes a {
     font-size: 1.3em;
@@ -137,7 +137,7 @@ header nav ul a:hover::before {
     padding-left: 7.5em;
   }
   header nav ul a {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 @media (max-width: 360px) {
@@ -485,14 +485,14 @@ header nav ul a:hover::before {
     width: 35vh;
   }
   .nosotros .presentacion h3 {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
   .nosotros .presentacion p {
-    font-size: 0.7em;
+    font-size: 0.85em;
     padding: 0px 6px;
   }
   .containerins h2 {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .containerins .inscribite {
     flex-direction: column;
@@ -509,10 +509,10 @@ header nav ul a:hover::before {
     margin-top: 10px;
   }
   .containerins .inscribite .contactanos h3 {
-    font-size: 0.7em;
+    font-size: 0.85em;
   }
   .containerins .inscribite .contactanos p {
-    font-size: 0.6em;
+    font-size: 0.75em;
     padding: 0px 10px;
     margin-bottom: 10px;
   }
@@ -527,10 +527,10 @@ header nav ul a:hover::before {
     margin-top: 10px;
   }
   .containerins .inscribite .info h3 {
-    font-size: 0.7em;
+    font-size: 0.85em;
   }
   .containerins .inscribite .info p {
-    font-size: 0.6em;
+    font-size: 0.75em;
     padding: 0px 10px;
     margin-bottom: 10px;
   }
@@ -545,10 +545,10 @@ header nav ul a:hover::before {
     margin-top: 10px;
   }
   .containerins .inscribite .practica h3 {
-    font-size: 0.7em;
+    font-size: 0.85em;
   }
   .containerins .inscribite .practica p {
-    font-size: 0.6em;
+    font-size: 0.75em;
     padding: 0px 10px;
     margin-top: 2px;
     margin-bottom: 10px;

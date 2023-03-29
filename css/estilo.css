@@ -159,7 +159,7 @@ header nav ul a:hover::before {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/foto1.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/foto1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -212,8 +212,8 @@ header nav ul a:hover::before {
   text-align: center;
 }
 .container1 p {
-  font-family: tahoma;
-  font-size: 1.4em;
+  font-family: "oswald";
+  font-size: 1.8em;
   color: rgb(254, 254, 254);
   text-align: center;
   margin: 0px 20px;
@@ -250,8 +250,8 @@ header nav ul a:hover::before {
   padding-bottom: 10px;
 }
 .nosotros .presentacion p {
-  font-family: tahoma;
-  font-size: 1em;
+  font-family: "oswald";
+  font-size: 1.4em;
   color: rgb(254, 254, 254);
   padding: 0px 10px;
 }
@@ -292,13 +292,13 @@ header nav ul a:hover::before {
 }
 .containerins .inscribite .contactanos h3 {
   font-family: helvetica;
-  font-size: 1em;
+  font-size: 1.1em;
   color: rgb(254, 254, 254);
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 .containerins .inscribite .contactanos p {
-  font-family: tahoma;
-  font-size: 0.9em;
+  font-family: "oswald";
+  font-size: 1.2em;
   color: rgb(254, 254, 254);
 }
 .containerins .inscribite .contactanos img {
@@ -320,13 +320,13 @@ header nav ul a:hover::before {
 }
 .containerins .inscribite .info h3 {
   font-family: helvetica;
-  font-size: 1em;
+  font-size: 1.1em;
   color: rgb(254, 254, 254);
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 .containerins .inscribite .info p {
-  font-family: tahoma;
-  font-size: 0.9em;
+  font-family: "oswald";
+  font-size: 1.2em;
   color: rgb(254, 254, 254);
 }
 .containerins .inscribite .info img {
@@ -348,13 +348,13 @@ header nav ul a:hover::before {
 }
 .containerins .inscribite .practica h3 {
   font-family: helvetica;
-  font-size: 1em;
+  font-size: 1.1em;
   color: rgb(254, 254, 254);
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 .containerins .inscribite .practica p {
-  font-family: tahoma;
-  font-size: 0.9em;
+  font-family: "oswald";
+  font-size: 1.2em;
   color: rgb(254, 254, 254);
 }
 .containerins .inscribite .practica img {
@@ -806,7 +806,7 @@ main section .contenedorcursos1 .cursosimg img {
 }
 main section .contenedorcursos1 .curso1 {
   height: 420px;
-  width: 550px;
+  width: 560px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -818,7 +818,7 @@ main section .contenedorcursos1 .curso1 h3 {
   color: rgb(254, 254, 254);
 }
 main section .contenedorcursos1 .curso1 p {
-  font-family: tahoma;
+  font-family: "oswald";
   font-size: 1em;
   color: rgb(254, 254, 254);
 }
@@ -835,7 +835,7 @@ main section .contenedorcurso2 .cursosimg img {
 }
 main section .contenedorcurso2 .curso2 {
   height: 420px;
-  width: 550px;
+  width: 560px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -847,7 +847,7 @@ main section .contenedorcurso2 .curso2 h3 {
   color: rgb(254, 254, 254);
 }
 main section .contenedorcurso2 .curso2 p {
-  font-family: tahoma;
+  font-family: "oswald";
   font-size: 1em;
   color: rgb(254, 254, 254);
 }
@@ -863,7 +863,7 @@ main section .contenedorcurso3 .cursosimg img {
 }
 main section .contenedorcurso3 .curso3 {
   height: 420px;
-  width: 550px;
+  width: 560px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -875,7 +875,7 @@ main section .contenedorcurso3 .curso3 h3 {
   color: rgb(254, 254, 254);
 }
 main section .contenedorcurso3 .curso3 p {
-  font-family: tahoma;
+  font-family: "oswald";
   font-size: 1em;
   color: rgb(254, 254, 254);
 }
@@ -1115,7 +1115,7 @@ main section .contenedorasesora .asesorainfo h3 {
   color: rgb(254, 254, 254);
 }
 main section .contenedorasesora .asesorainfo p {
-  font-family: tahoma;
+  font-family: "oswald";
   font-size: 1em;
   color: rgb(254, 254, 254);
 }
@@ -1147,7 +1147,7 @@ main section .contenedorbarras .barrasinfo h3 {
   color: rgb(254, 254, 254);
 }
 main section .contenedorbarras .barrasinfo p {
-  font-family: tahoma;
+  font-family: "oswald";
   font-size: 1em;
   color: rgb(254, 254, 254);
 }

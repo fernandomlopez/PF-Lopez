@@ -14,7 +14,7 @@ main {
             }
 
             .curso1 {
-                @include tamaños(420px, 550px);
+                @include tamaños(420px, 560px);
                 @include flexible(flex, column, space-evenly, flex-start);
 
                 h3 {
@@ -39,7 +39,7 @@ main {
             }
 
             .curso2 {
-                @include tamaños(420px, 550px);
+                @include tamaños(420px, 560px);
                 @include flexible(flex, column, space-evenly, flex-start);
 
                 h3 {
@@ -64,7 +64,7 @@ main {
             }
 
             .curso3 {
-                @include tamaños(420px, 550px);
+                @include tamaños(420px, 560px);
                 @include flexible(flex, column, space-evenly, flex-start);
 
                 h3 {

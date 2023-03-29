@@ -4,12 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" href="../css/bootstrap.css">
 	<!-- ESTILO PROPIO -->
 	<link rel="stylesheet" href="../css/estilo.css">
 	<link rel="icon" href="../img/fm.ico">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link
 		href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Roboto&family=Roboto+Condensed:wght@700&display=swap"
 		rel="stylesheet">
@@ -18,7 +17,7 @@
 
 <body>
 	<header>
-		<img src="../img/fm.png" class="hdr"/>
+		<img src="../img/fm.png" class="hdr" />
 		<nav>
 			<input type="checkbox" id="check-menu" />
 			<label for="check-menu" class="menu"><i class='bx bx-menu'></i></label>
@@ -39,7 +38,7 @@
 	</section>
 	<main>
 		<section>
-			<div class="contenedorcursos1">
+			<div class="contenedorcursos1" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
 				<div class="cursosimg">
 					<img src="../img/cursos1.jpg">
 				</div>
@@ -56,12 +55,10 @@
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</div>
 			</div>
-			<div class="contenedorcurso2">
+			<div class="contenedorcurso2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 				<div class="cursosimg">
 					<img src="../img/cursos2.png" />
 				</div>
@@ -81,7 +78,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="contenedorcurso3">
+			<div class="contenedorcurso3" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
 				<div class="cursosimg">
 					<img src="../img/cursos3.jpg" />
 				</div>
@@ -104,10 +101,25 @@
 		</section>
 	</main>
 	<footer>
-		<img src="../img/fm.png" />
-		<h4>FM COCKTAILS - <a href="#hero">Ir arriba</a></h4>
-		<p>&copy;FMCOCKTAILS-Fernando.mlopez</p>
+		<div class="social-icons-container">
+			<a href="https://www.facebook.com/barrasmovilesfm/" class="social-icon"></a>
+			<a href="https://www.instagram.com/fm.cocktails/" class="social-icon"></a>
+			<a href="https://web.whatsapp.com/" class="social-icon"></a>
+			<a href="https://mail.google.com/mail/" class="social-icon"></a>
+		</div>
+		<ul class="footer-menu-container">
+			<li class="menu-item">Legal</li>
+			<li class="menu-item">Privacy</li>
+			<li class="menu-item">Shipping</li>
+			<li class="menu-item">Refounds</li>
+		</ul>
+		<span class="copyright">&copy;2023, FMcocktails Academy, All rights reserved.</span>
 	</footer>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>

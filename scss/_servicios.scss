@@ -1,0 +1,273 @@
+main {
+
+    section {
+
+        .container1ser {
+            height: 70vh;
+            @include flexible (flex, row, center, center);
+            text-align: center;
+
+            h2 {
+                @include fuentes ($fonttitle, 2.5em, $orand);
+                width: 100%;
+                margin: 0px;
+            }
+        }
+
+        .contenedorasesora {
+            height: 100vh;
+            @include flexible (flex, row, space-evenly, center);
+            animation-duration: 3s;
+            animation-name: animcursos;
+
+            .asesora {
+                img {
+                    @include tamaños (412px, 620px);
+                    box-shadow: $shaimg;
+                }
+            }
+
+            .asesorainfo {
+                @include tamaños(420px, 550px);
+                @include flexible(flex, column, space-evenly, flex-start);
+
+                h3 {
+                    @include fuentes ($fonttitle, 1.4em, $white);
+                }
+
+                p {
+                    @include fuentes ($fontparra, 1em, $white);
+                }
+            }
+        }
+
+        .contenedorbarras {
+            height: 100vh;
+            @include flexible (flex, row, space-evenly, center);
+            animation-duration: 4s;
+            animation-name: animcursos;
+
+            .barras {
+                img {
+                    @include tamaños(412px, 620px);
+                    box-shadow: $shaimg;
+                }
+            }
+
+            .barrasinfo {
+                @include tamaños (420px, 550px);
+                @include flexible(flex, column, space-evenly, flex-start);
+
+                h3 {
+                    @include fuentes ($fonttitle, 1.4em, $white);
+                }
+
+                p {
+                    @include fuentes ($fontparra, 1em, $white);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    main {
+        section {
+            .container1ser {
+                @include tamaños (30vh, auto);
+
+                h2 {
+                    font-size: 1.9em;
+                    padding-left: 10px;
+                }
+            }
+
+            .contenedorasesora {
+                @include tamaños (70vh, auto);
+                margin: 0 auto;
+                flex-direction: column;
+
+                .asesora {
+                    img {
+                        @include tamaños (30vh, auto);
+                    }
+                }
+
+                .asesorainfo {
+                    @include tamaños (40vh, auto);
+                    align-items: center;
+
+                    h3 {
+                        width: auto;
+                        font-size: 1.5em;
+                    }
+
+                    p {
+                        font-size: 1.2em;
+                        margin: 0px;
+                        padding: 0px 40px;
+                        text-align: initial;
+                    }
+                }
+            }
+
+            .contenedorbarras {
+                @include tamaños (70vh, auto);
+                margin: 0 auto;
+                flex-direction: column;
+
+                .barras {
+                    img {
+                        @include tamaños (30vh, auto);
+                    }
+                }
+
+                .barrasinfo {
+                    @include tamaños (40vh, auto);
+                    align-items: center;
+
+                    h3 {
+                        width: auto;
+                        font-size: 1.5em;
+                    }
+
+                    p {
+                        font-size: 1.2em;
+                        margin: 0px;
+                        padding: 0px 40px;
+                        text-align: initial;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:667px) {
+    main {
+        section {
+            .container1ser {
+
+                h2 {
+                    font-size: 1.5em;
+                }
+            }
+
+            .contenedorasesora {
+                .asesora {
+                    img {
+                        @include tamaños (25vh, auto);
+                    }
+                }
+
+                .asesorainfo {
+                    @include tamaños (55vh, auto);
+                    align-items: center;
+
+                    h3 {
+                        width: auto;
+                        font-size: 1.2em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                        margin: 0px;
+                        padding: 0px 20px;
+                        text-align: initial;
+                    }
+                }
+            }
+
+            .contenedorbarras {
+                .barras {
+                    img {
+                        @include tamaños (28vh, auto);
+                    }
+                }
+
+                .barrasinfo {
+                    @include tamaños (55vh, auto);
+                    align-items: center;
+
+                    h3 {
+                        width: auto;
+                        font-size: 1.2em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                        margin: 0px;
+                        padding: 0px 20px;
+                        text-align: initial;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:360px) {
+    main {
+
+        section {
+
+            .container1ser {
+
+                height: 25vh;
+
+                h2 {
+                    font-size: 1.2em;
+                    padding-left: 10px;
+                }
+            }
+
+            .contenedorasesora {
+                @include tamaños (65vh, auto);
+                flex-direction: column;
+                margin: 0 auto;
+
+                .asesora {
+                    img {
+                        @include tamaños (22vh, auto);
+                    }
+                }
+
+                .asesorainfo {
+                    height: 55vh;
+
+                    h3 {
+                        font-size: 1em;
+                    }
+
+                    p {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+
+            .contenedorbarras {
+                @include tamaños (65vh, auto);
+                flex-direction: column;
+                margin: 0 auto;
+
+                .barras {
+                    img {
+                        @include tamaños (22vh, auto);
+                    }
+                }
+
+                .barrasinfo {
+                    height: 55vh;
+
+                    h3 {
+                        font-size: 1em;
+                    }
+
+                    p {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+    }
+}

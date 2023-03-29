@@ -1,0 +1,225 @@
+main {
+
+    .formcontacto {
+
+        height: 100vh !important;
+        box-shadow: $shabla !important;
+
+        .conta {
+
+            height: 20vh !important;
+            margin-top: 70px !important;
+
+            .wpp {
+
+                height: 10vh !important;
+
+                img {
+
+                    @include tamaños (6vh, 9vh);
+
+                }
+            }
+
+            .email {
+
+                height: 10vh !important;
+
+                img {
+
+                    @include tamaños (6vh, 9vh);
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    main {
+
+        .formcontacto {
+
+            height: 100vh !important;
+            box-shadow: $shabla !important;
+
+            iframe {
+                @include tamaños (30vh, 50vh);
+                margin-top: 20px;
+            }
+
+            .conta {
+
+                @include tamaños (20vh !important, 100% !important);
+                margin: 0px !important;
+                padding: 0px 20px !important;
+
+                .wpp {
+
+                    @include tamaños (10vh !important, auto !important);
+
+
+                    img {
+
+                        @include tamaños (3.5vh !important, 4.7vh !important);
+
+                    }
+                }
+
+                .email {
+
+                    @include tamaños (10vh !important, auto !important);
+
+                    img {
+
+                        @include tamaños (3.5vh !important, 4.7vh !important);
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:667px) {
+    main {
+
+        .formcontacto {
+
+            height: 100vh !important;
+            box-shadow: $shabla !important;
+
+            iframe {
+                @include tamaños (30vh, auto);
+                margin-top: 40px;
+            }
+
+            .conta {
+
+                @include tamaños (20vh !important, 100% !important);
+                margin: 0px !important;
+                padding: 0px 20px !important;
+
+                .wpp {
+
+                    @include tamaños (10vh !important, auto !important);
+
+
+                    img {
+
+                        @include tamaños (3.5vh !important, 4.7vh !important);
+
+                    }
+
+                    p {
+                        font-size: 1em !important;
+                    }
+                }
+
+                .email {
+
+                    @include tamaños (10vh !important, auto !important);
+
+                    img {
+
+                        @include tamaños (3.5vh !important, 4.7vh !important);
+
+                    }
+
+                    p {
+                        font-size: 1em !important;
+                    }
+                }
+            }
+
+            .formpropio {
+                input {
+                    height: 3vh !important;
+                    margin-bottom: 3px !important;
+                }
+
+                textarea {
+                    height: 23vh !important;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:360px) {
+    main {
+
+        .formcontacto {
+
+            height: 100vh !important;
+            box-shadow: $shabla !important;
+
+            iframe {
+                @include tamaños (30vh, 40vh);
+                margin-top: 20px;
+            }
+
+            .conta {
+
+                @include tamaños (13vh !important, 100% !important);
+                margin: 0px !important;
+                padding: 0px 20px !important;
+
+                .wpp {
+
+                    @include tamaños (6vh !important, auto !important);
+
+
+                    img {
+
+                        @include tamaños (3.2vh !important, 4.2vh !important);
+
+                    }
+
+                    p {
+                        font-size: 0.75em !important;
+                    }
+                }
+
+                .email {
+
+                    @include tamaños (6vh !important, auto !important);
+
+                    img {
+
+                        @include tamaños (3.2vh !important, 4.2vh !important);
+
+                    }
+
+                    p {
+                        font-size: 0.8em !important;
+                    }
+                }
+            }
+
+            .formpropio {
+                input {
+                    height: 4vh !important;
+                }
+
+                textarea {
+                    height: 20vh !important;
+                }
+
+                button {
+                    height: 4.5vh !important;
+                    padding: 5px !important;
+
+                    .pbut {
+                        font-size: 0.8em !important;
+                        margin: 0px !important;
+                        padding: 0px !important;
+                    }
+                }
+            }
+        }
+    }
+
+}

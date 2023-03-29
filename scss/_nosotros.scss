@@ -1,0 +1,530 @@
+.container1 {
+    height: 696px;
+    @include flexible(flex, column, center, center);
+
+    & h2 {
+        width: 100%;
+        margin: 0px;
+        @include fuentes ($fonttitle, 2.5em, $orand);
+        text-align: center;
+    }
+
+    & p {
+        @include fuentes ($fontparra, 1.4em, $white);
+        text-align: center;
+        margin: 0px 20px;
+    }
+}
+
+.nosotros {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45% 50% 5%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "img presentacion ."
+        "img presentacion ."
+        "img presentacion ."
+        "img presentacion ."
+    ;
+
+    .imgbartender {
+        grid-area: img;
+
+        img {
+            @include tamaños(100vh, 75vh);
+            box-shadow: $shabla;
+        }
+    }
+
+    .presentacion {
+        grid-area: presentacion;
+        @include flexible(flex, column, center, start);
+
+        h3 {
+            @include fuentes ($fonttitle, 2em, $white);
+            margin: 0px;
+            padding: 0px 10px;
+            padding-bottom: 10px;
+        }
+
+        p {
+            @include fuentes ($fontparra, 1em, $white);
+            padding: 0px 10px;
+        }
+    }
+}
+
+.containerins {
+
+    @include flexible(flex, column, center, center);
+    margin: 25px;
+    padding: 150px 12px;
+
+    h2 {
+        @include fuentes($fonttitle, 2.4em, $white);
+
+        span {
+            color: $orand
+        }
+    }
+
+    .inscribite {
+        @include flexible (flex, row, space-evenly, center);
+        text-align: center;
+        margin-top: 50px;
+
+        .contactanos {
+            @include flexible (flex, column, center, center);
+            border-radius: 28px;
+            box-shadow: $shabla;
+            margin: 20px;
+            padding: 50px;
+
+            h3 {
+                @include fuentes ($fonttitle, 1em, $white);
+                margin: 10px 0px;
+            }
+
+            p {
+                @include fuentes ($fontparra, 0.9em, $white);
+            }
+
+            img {
+                @include tamaños(60px, 60px);
+            }
+
+            &:hover {
+                box-shadow: $shablug;
+            }
+        }
+
+        .info {
+            @include flexible (flex, column, center, center);
+            border-radius: 28px;
+            box-shadow: $shabla;
+            margin: 20px;
+            padding: 50px;
+
+            h3 {
+                @include fuentes ($fonttitle, 1em, $white);
+                margin: 10px 0px;
+            }
+
+            p {
+                @include fuentes ($fontparra, 0.9em, $white);
+            }
+
+            img {
+                @include tamaños(60px, 60px);
+            }
+
+            &:hover {
+                box-shadow: $shablug;
+            }
+        }
+
+        .practica {
+            @include flexible (flex, column, center, center);
+            border-radius: 28px;
+            box-shadow: $shabla;
+            margin: 20px;
+            padding: 50px;
+
+            h3 {
+                @include fuentes ($fonttitle, 1em, $white);
+                margin: 10px 0px;
+            }
+
+            p {
+                @include fuentes ($fontparra, 0.9em, $white);
+            }
+
+            img {
+                @include tamaños(60px, 60px);
+            }
+
+            &:hover {
+                box-shadow: $shablug;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .container1 {
+        height: 50vh;
+
+        h2 {
+            font-size: 1.9em;
+        }
+
+        p {
+            font-size: 1.4em;
+            padding: 0px 20px;
+        }
+    }
+
+    .nosotros {
+
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% repeat(4, 1fr);
+        grid-template-areas:
+            "img"
+            "presentacion"
+            "presentacion"
+            "presentacion"
+            "presentacion";
+
+        .imgbartender {
+            height: 48vh;
+            display: flex;
+            justify-content: center;
+
+            img {
+                @include tamaños (47vh, 45vh);
+            }
+        }
+
+        .presentacion {
+            height: 50vh;
+            display: block;
+            width: auto;
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+
+            h3 {
+                font-size: 1.4em;
+                padding: 0px 10px;
+            }
+
+            p {
+                font-size: 1.1em;
+                padding: 0px 5px;
+            }
+        }
+    }
+
+    .containerins {
+        display: block;
+        height: 65vh;
+        margin: 0px;
+        padding: 15px 0px;
+
+        h2 {
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .inscribite {
+            margin-top: 75px;
+
+            .contactanos {
+                border-radius: 14px;
+                padding: 0px;
+
+                img {
+                    @include tamaños (4vh, 4vh);
+                    margin-top: 10px;
+                }
+
+                h3 {
+                    font-size: 1em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .info {
+                border-radius: 14px;
+                padding: 0px;
+
+                img {
+                    @include tamaños (4vh, 4vh);
+                    margin-top: 10px;
+                }
+
+                h3 {
+
+                    font-size: 1em;
+
+                }
+
+                p {
+                    font-size: 0.8em;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .practica {
+                border-radius: 14px;
+                padding: 0px;
+
+                img {
+                    @include tamaños (4vh, 4vh);
+                    margin-top: 10px;
+                }
+
+                h3 {
+
+                    font-size: 1em;
+
+                }
+
+                p {
+                    font-size: 0.8em;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:667px) {
+
+    .container1 {
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    .nosotros {
+
+        .imgbartender {
+            height: 45vh;
+
+            img {
+                @include tamaños (47vh, 35vh);
+            }
+        }
+
+        .presentacion {
+
+            h3 {
+                font-size: 0.9em;
+            }
+
+            p {
+                font-size: 0.7em;
+                padding: 0px 6px;
+            }
+        }
+    }
+
+    .containerins {
+
+        h2 {
+            font-size: 0.9em;
+        }
+
+        .inscribite {
+            flex-direction: column;
+            margin: 0px 50px 0px;
+
+            .contactanos {
+                border-radius: 12px;
+                padding: 0px;
+                margin: 8px 25px;
+
+                img {
+                    @include tamaños (4vh, 4vh);
+                    margin-top: 10px;
+                }
+
+                h3 {
+                    font-size: 0.7em;
+                }
+
+                p {
+                    font-size: 0.6em;
+                    padding: 0px 10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .info {
+                border-radius: 12px;
+                padding: 0px;
+                margin: 8px 25px;
+
+                img {
+                    @include tamaños (4vh, 4vh);
+                    margin-top: 10px;
+                }
+
+                h3 {
+
+                    font-size: 0.7em;
+
+                }
+
+                p {
+                    font-size: 0.6em;
+                    padding: 0px 10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .practica {
+                border-radius: 14px;
+                padding: 0px;
+                margin: 8px 25px;
+
+                img {
+                    @include tamaños (4vh, 4vh);
+                    margin-top: 10px;
+                }
+
+                h3 {
+                    font-size: 0.7em;
+                }
+
+                p {
+                    font-size: 0.6em;
+                    padding: 0px 10px;
+                    margin-top: 2px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:360px) {
+
+    .container1 {
+
+        height: 40vh;
+
+
+        h2 {
+            font-size: 1em;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 0.8em;
+        }
+    }
+
+    .nosotros {
+
+        grid-template-rows: 40% repeat(4, 1fr);
+
+        .imgbartender {
+            height: 35vh;
+
+            img {
+                @include tamaños (40vh, 32vh);
+            }
+        }
+
+        .presentacion {
+            @include tamaños (50vh, auto);
+            padding-top: 5px;
+            padding-left: 5px;
+
+            h3 {
+                font-size: 0.8em;
+                padding: 3px 5px 0px;
+            }
+
+            p {
+                font-size: 0.7em;
+                padding: 0px 5px;
+            }
+        }
+    }
+
+    .containerins {
+
+        height: 60vh;
+        margin: 0px;
+        padding: 0px;
+
+        h2 {
+            font-size: 0.65em;
+            margin-top: 8px;
+        }
+
+        .inscribite {
+
+            margin: 0px 40px 0px;
+
+            .contactanos {
+                border-radius: 10px;
+                padding: 0px;
+                margin: 8px 25px;
+
+                img {
+                    @include tamaños (4vh, 4vh);
+                    margin-top: 10px;
+                }
+
+                h3 {
+                    font-size: 0.6em;
+                    margin: 8px 0px;
+                }
+
+                p {
+                    font-size: 0.45em;
+                    margin: 0px;
+                }
+            }
+
+            .info {
+                border-radius: 12px;
+                padding: 0px;
+                margin: 8px 25px;
+
+                img {
+                    @include tamaños (4vh, 4vh);
+                    margin-top: 10px;
+                }
+
+                h3 {
+                    font-size: 0.6em;
+                    margin: 8px 0px;
+                }
+
+                p {
+                    font-size: 0.45em;
+                    margin: 0px;
+                }
+            }
+
+            .practica {
+                border-radius: 14px;
+                padding: 0px;
+                margin: 8px 25px;
+
+                img {
+                    @include tamaños (4vh, 4vh);
+                    margin-top: 10px;
+                }
+
+                h3 {
+                    font-size: 0.6em;
+                    margin: 8px 0px;
+                }
+
+                p {
+                    font-size: 0.45em;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,374 @@
+main {
+
+    section {
+
+        .contenedorcursos1 {
+            height: 100vh;
+            @include flexible(flex, row, space-evenly, center);
+            box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.5);
+
+            .cursosimg {
+                img {
+                    box-shadow: $shaimg;
+                }
+            }
+
+            .curso1 {
+                @include tamaños(420px, 550px);
+                @include flexible(flex, column, space-evenly, flex-start);
+
+                h3 {
+                    @include fuentes ($fonttitle, 1.4em, $white);
+                }
+
+                p {
+                    @include fuentes ($fontparra, 1em, $white);
+                }
+            }
+        }
+
+        .contenedorcurso2 {
+            height: 100vh;
+            @include flexible(flex, row-reverse, space-evenly, center);
+            box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.5);
+
+            .cursosimg {
+                img {
+                    box-shadow: $shaimg;
+                }
+            }
+
+            .curso2 {
+                @include tamaños(420px, 550px);
+                @include flexible(flex, column, space-evenly, flex-start);
+
+                h3 {
+                    @include fuentes ($fonttitle, 1.4em, $white);
+                }
+
+                p {
+                    @include fuentes ($fontparra, 1em, $white);
+                }
+            }
+
+        }
+
+        .contenedorcurso3 {
+            height: 100vh;
+            @include flexible(flex, row, space-evenly, center);
+
+            .cursosimg {
+                img {
+                    box-shadow: $shaimg;
+                }
+            }
+
+            .curso3 {
+                @include tamaños(420px, 550px);
+                @include flexible(flex, column, space-evenly, flex-start);
+
+                h3 {
+                    @include fuentes ($fonttitle, 1.4em, $white);
+                }
+
+                p {
+                    @include fuentes ($fontparra, 1em, $white);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    main {
+
+        section {
+
+            .contenedorcursos1 {
+
+                @include tamaños (70vh, auto);
+                flex-direction: column;
+                margin: 0 auto;
+
+                .cursosimg {
+
+                    img {
+                        height: 30vh;
+                        margin-top: 50px
+                    }
+                }
+
+                .curso1 {
+                    @include tamaños (40vh, auto);
+                    align-items: center;
+                    margin: 10px;
+
+                    h3 {
+                        font-size: 1.5em;
+                        text-align: center;
+                        margin: 5px;
+                        padding: 0px;
+                    }
+
+                    p {
+                        font-size: 1em;
+                        margin: 0px;
+                        padding: 0px 30px;
+                    }
+                }
+
+            }
+
+            .contenedorcurso2 {
+                @include tamaños (70vh, auto);
+                flex-direction: column;
+                margin: 0 auto;
+
+                .cursosimg {
+
+                    img {
+                        height: 30vh;
+                        margin-top: 50px
+                    }
+                }
+
+                .curso2 {
+                    @include tamaños (40vh, auto);
+                    align-items: center;
+                    margin: 10px;
+
+                    h3 {
+                        font-size: 1.5em;
+                        text-align: center;
+                        margin: 5px;
+                        padding: 0px;
+                    }
+
+                    p {
+                        font-size: 1em;
+                        margin: 0px;
+                        padding: 0px 30px;
+                    }
+                }
+
+            }
+
+            .contenedorcurso3 {
+                @include tamaños (70vh, auto);
+                flex-direction: column;
+                margin: 0 auto;
+
+                .cursosimg {
+
+                    img {
+                        height: 30vh;
+                        margin-top: 50px
+                    }
+                }
+
+                .curso3 {
+                    @include tamaños (40vh, auto);
+                    align-items: center;
+                    margin: 10px;
+
+                    h3 {
+                        font-size: 1.5em;
+                        text-align: center;
+                        margin: 5px;
+                        padding: 0px;
+                    }
+
+                    p {
+                        font-size: 1em;
+                        margin: 0px;
+                        padding: 0px 30px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width:667px) {
+    main {
+
+        section {
+
+            .contenedorcursos1 {
+
+                .cursosimg {
+
+                    img {
+                        height: 25vh;
+                    }
+                }
+
+                .curso1 {
+                    @include tamaños (35vh, auto);
+
+                    h3 {
+                        font-size: 1.15em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+
+            }
+
+            .contenedorcurso2 {
+                .cursosimg {
+
+                    img {
+                        height: 25vh;
+                    }
+                }
+
+                .curso2 {
+                    @include tamaños (35vh, auto);
+
+                    h3 {
+                        font-size: 1.15em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+
+            }
+
+            .contenedorcurso3 {
+                .cursosimg {
+
+                    img {
+                        height: 25vh;
+                    }
+                }
+
+                .curso3 {
+                    @include tamaños (35vh, auto);
+
+                    h3 {
+                        font-size: 1.15em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:360px) {
+    main {
+        section {
+            .contenedorcursos1 {
+
+                height: 65vh;
+
+                .cursosimg {
+
+                    img {
+                        height: 25vh;
+                        margin: 7px 0px;
+                    }
+
+                }
+
+                .curso1 {
+                    height: 35vh;
+                    margin: 5px;
+
+                    h3 {
+                        font-size: 0.8em;
+                        text-align: center;
+                        margin: 7px;
+                        padding: 0px;
+                    }
+
+                    p {
+                        font-size: 0.6em;
+                        margin: 0px;
+                        padding: 0px 20px;
+
+                    }
+
+                }
+            }
+
+            .contenedorcurso2 {
+
+                height: 65vh;
+
+                .cursosimg {
+
+                    img {
+                        height: 25vh;
+                        margin: 7px 0px;
+                    }
+
+                }
+
+                .curso2 {
+                    height: 35vh;
+                    margin: 5px;
+
+                    h3 {
+                        font-size: 0.8em;
+                        text-align: center;
+                        margin: 7px;
+                        padding: 0px;
+                    }
+
+                    p {
+                        font-size: 0.6em;
+                        margin: 0px;
+                        padding: 0px 20px;
+
+                    }
+
+                }
+            }
+
+            .contenedorcurso3 {
+
+                height: 65vh;
+
+                .cursosimg {
+
+                    img {
+                        height: 25vh;
+                        margin: 7px 0px;
+                    }
+
+                }
+
+                .curso3 {
+                    height: 35vh;
+                    margin: 5px;
+
+                    h3 {
+                        font-size: 0.8em;
+                        text-align: center;
+                        margin: 7px;
+                        padding: 0px;
+                    }
+
+                    p {
+                        font-size: 0.6em;
+                        margin: 0px;
+                        padding: 0px 20px;
+
+                    }
+
+                }
+            }
+        }
+    }
+}

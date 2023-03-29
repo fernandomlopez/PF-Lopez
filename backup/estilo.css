@@ -1,0 +1,1272 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0px;
+     padding: 0px;
+     background-color: rgb(7, 7, 7);
+     color: rgb(254, 254, 254);
+}
+
+header {
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     height: 95px;
+     width: 100%;
+     margin: 0px;
+     position: fixed;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+a {
+     font-family: "pt sans narrow";
+     font-size: 25px;
+     color: rgb(249, 204, 179);
+     text-decoration: none;
+     position: relative;
+     margin: 3.5px;
+     padding-left: 10px;
+ }
+ 
+ a:hover {
+     color: white;
+ }
+ 
+a::before {
+     content: "";
+     height: 3px;
+     width: 0%;
+     background:  rgba(41, 169, 201, 0.87);
+     position: absolute;
+     left: 0;
+     bottom: -12px;
+     transition: 0.4s ease-out;
+ }
+ 
+a:hover::before {
+     width: 100%;
+ }
+ 
+
+header .hdr {
+     width: 70px;
+     height: 70px;
+}
+
+ul {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     margin-bottom: 0px;
+}
+
+ul li {
+     padding-left: 10px;
+}
+
+nav ul li {
+     padding: 10px 15px
+}
+
+.logoredes {
+     height: 4vh;
+     width: 4vh;
+     margin-bottom: 3px;
+}
+
+#check-menu,
+label.menu {
+     display: none;
+}
+
+.hero {
+     font-family: "pt sans narrow";
+     margin: 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     height: 100vh;
+     background-image: linear-gradient(0deg,
+               rgba(0, 0, 0, 0.5),
+               rgba(0, 0, 0, 0.5)), url("../img/foto1.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+.hero h1 {
+     font-family: "pt sans narrow";
+     font-size: 3.8em;
+     color: rgb(254, 254, 254);
+     align-items: center;
+     text-align: center;
+}
+
+.container1 {
+     height: 696px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.container1 h2 {
+     width: 100%;
+     margin: 0px;
+     font-size: 2.3em;
+     font-family: helvetica;
+     color: rgb(248, 199, 175);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+.container1 p {
+     font-size: 1.3em;
+     font-family: tahoma;
+     display: block;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin: 0px 20px;
+}
+
+.nosotros {
+     height: 100vh;
+     display: grid;
+     grid-template-columns: 45% 50% 5%;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     grid-template-areas:
+          "img presentacion ."
+          "img presentacion ."
+          "img presentacion ."
+          "img presentacion ."
+     ;
+}
+
+.imgbartender {
+     grid-area: img;
+}
+
+.imgbartender img {
+     height: 90vh;
+     width: 75vh;
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.presentacion {
+     grid-area: presentacion;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.presentacion h3 {
+     padding: 0px 10px;
+     padding-bottom: 10px;
+     margin: 0px;
+     font-size: 2rem;
+     font-family: helvetica;
+     color: rgb(254, 254, 254);
+}
+
+.presentacion p {
+     padding: 0px 10px;
+     font-size: 1rem;
+     font-family: tahoma;
+     color: rgb(254, 254, 254);
+}
+
+.containerins {
+     margin: 50px;
+     padding: 150px 12px;
+     font-size: 1.3em;
+     font-family: Helvetica, sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.inscribite {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     text-align: center;
+}
+
+.inscribite h3 {
+     margin: 10px 0px;
+     font-size: 1.05em;
+     font-family: Helvetica;
+}
+
+.inscribite p {
+     font-size: 0.8em;
+     font-family: tahoma;
+}
+
+.inscribite img {
+     height: 60px;
+     width: 60px;
+}
+
+.contactanos,
+.info,
+.practica {
+     padding: 50px;
+     margin: 20px;
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+}
+
+.contactanos:hover {
+     box-shadow: 2px 2px 10px rgba(60, 91, 150, 0.5);
+}
+
+.info:hover {
+     box-shadow: 2px 2px 10px rgba(60, 91, 150, 0.5);
+}
+.practica:hover {
+     box-shadow: 2px 2px 10px rgba(60, 91, 150, 0.5);
+}
+/* SECTOR CURSOS*/
+.cursosimg img {
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.curso1,
+.curso2,
+.curso3 {
+     height: 420px;
+     width: 550px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     text-align: initial;
+}
+
+.contenedorcursos1,
+.contenedorcurso3 {
+     height: 100vh;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.contenedorcurso2 {
+     height: 100vh;
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: row-reverse;
+     align-items: center;
+}
+
+.curso1 h3,
+.curso2 h3,
+.curso3 h3 {
+     font-family: helvetica;
+     font-size: 1.4em;
+}
+
+.curso1 p,
+.curso2 p,
+.curso3 p {
+     font-family: tahoma;
+     font-size: 1em;
+}
+
+/* SECTOR SERVICIOS*/
+
+.container1ser {
+     height: 70vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+.container1ser h2 {
+     width: 100%;
+     margin: 0px;
+     font-size: 2.5em;
+     color: rgb(228, 142, 101);
+}
+
+.contenedorasesora,
+.contenedorbarras {
+     height: 100vh;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.asesora img,
+.barras img {
+     height: 412px;
+     width: 620px;
+}
+
+.asesorainfo,
+.barrasinfo {
+     height: 420px;
+     width: 550px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     text-align: initial;
+}
+
+.asesorainfo h3,
+.barrasinfo h3 {
+     font-size: 1.4em;
+     font-family: helvetica;
+}
+
+.asesorainfo p,
+.barrasinfo p {
+     font-size: 1em;
+     font-family: tahoma;
+}
+
+/* SECTOR CONTACTO*/
+.conta {
+     height: 20vh;
+     margin-top: 70px;
+}
+
+.wpp img,
+.email img {
+     height: 6vh !important;
+     width: 9vh !important;
+}
+
+.wpp,
+.email {
+     height: 10vh;
+}
+
+.formcontacto {
+     height: 100vh !important;
+     box-shadow: 2px 2px 5px rgb(1, 10, 19) !important;
+}
+/*SECTOR FOOTER*/
+footer img {
+     padding: 10px;
+     width: 90px;
+     height: 90px;
+}
+
+footer h4 {
+     font-size: 20px;
+}
+
+footer p {
+     margin-right: 10px;
+}
+
+footer {
+     margin: 0px;
+     padding: 0px;
+     height: 300px;
+     color: rgb(254, 254, 254);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+/*MEDIA QUERIES 768px */
+
+/*SECTOR HOME/NOSOTROS*/
+
+@media (max-width:768px) {
+     header {
+          height: 10vh;
+          position: absolute;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+     }
+
+     header img {
+          margin-left: 15px;
+          height: 8vh;
+          width: 8vh;
+     }
+
+     nav {
+          height: 15vh;
+          width: 80%;
+          padding-left: 0px;
+     }
+
+     ul {
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+          margin: 0px;
+          margin-right: 50px;
+          padding-left: 0px;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          clip-path: circle(0 at center);
+     }
+     i {
+          padding-top: 60px;
+          padding-left: 16em;
+     }
+
+     label.menu {
+          display: block;
+          font-size: 2em;
+          color: aquamarine;
+          cursor: pointer;
+          margin-bottom: 0px;
+     }
+
+     #check-menu:checked~ul {
+          display: block;
+          clip-path: circle(100% at center);
+     }
+
+     a {
+          font-size: 1.3em;
+     }
+
+     .hero {
+          height: 90vh;
+     }
+     .hero h1 {
+          font-size: 3em;
+     }
+
+     .container1 {
+          height: 50vh;
+     }
+
+     .container1 h2 {
+          font-size: 1.9em;
+     }
+
+     .container1 p {
+          font-size: 1.4em;
+          padding: 0px 20px;
+     }
+
+     .nosotros {
+          height: 100vh;
+          grid-template-columns: 1fr;
+          grid-template-rows: 50% repeat(4, 1fr);
+          grid-template-areas:
+               "img"
+               "presentacion"
+               "presentacion"
+               "presentacion"
+               "presentacion";
+     }
+
+     .imgbartender {
+          height: 48vh;
+          display: flex;
+          justify-content: center;
+     }
+
+     .imgbartender img {
+          height: 47vh;
+          width: 45vh;
+     }
+
+     .presentacion {
+          display: block;
+          height: 50vh;
+          width: auto;
+          padding-top: 10px;
+          padding-left: 10px;
+     }
+
+     .presentacion h3 {
+          font-size: 1.4em;
+          padding: 0px 5px;
+     }
+
+     .presentacion p {
+          font-size: 1.1em;
+          padding: 0px 5px;
+     }
+
+     .containerins {
+          display: block;
+          height: 40vh;
+          margin: 0px;
+          padding: 15px 0px;
+     }
+
+     .containerins h2 {
+          font-size: 1.2em;
+          text-align: center;
+          margin-top: 10px;
+     }
+
+     .inscribite {
+          margin: 0px 50px 0px;
+     }
+
+     .inscribite h3 {
+          font-size: 1em;
+          margin: 10px 0px;
+     }
+
+     .inscribite p {
+          font-size: 0.8em;
+          margin: 0px
+     }
+
+     .contactanos,
+     .info,
+     .practica {
+          padding: 0px;
+          margin: 8px 25px;
+     }
+
+     .inscribite img {
+          height: 4vh;
+          width: 4vh;
+     }
+
+/* SECTOR CURSOS */
+
+     @media (max-width:768px) {
+
+          .contenedorcursos1,
+          .contenedorcurso2,
+          .contenedorcurso3 {
+               height: 70vh;
+               width: auto;
+               flex-direction: column;
+               margin: 0 auto;
+          }
+
+          .cursosimg img {
+               height: 30vh;
+          }
+
+          .curso1,
+          .curso2,
+          .curso3 {
+               height: 40vh;
+               width: auto;
+               margin: 10px;
+          }
+
+          .curso1 h3,
+          .curso2 h3,
+          .curso3 h3 {
+               font-size: 1.5em;
+               text-align: center;
+               margin: 5px;
+               padding: 0px;
+          }
+
+          .curso1 p,
+          .curso2 p,
+          .curso3 p {
+               font-size: 1em;
+               margin: 0px;
+               padding: 0px 30px;
+          }
+     }
+
+     /* SECTOR SERVICIOS */
+     @media (max-width:768px) {
+          .container1ser {
+               height: 30vh;
+               width: auto;
+          }
+
+          .container1ser h2 {
+               font-size: 1.9em;
+               padding-left: 10px;
+          }
+
+          .contenedorasesora,
+          .contenedorbarras {
+               height: 70vh;
+               width: auto;
+               flex-direction: column;
+               margin: 0 auto;
+          }
+
+          .asesora img,
+          .barras img {
+               height: 30vh;
+               width: auto;
+          }
+
+          .asesorainfo,
+          .barrasinfo {
+               height: 40vh;
+               width: auto;
+          }
+
+          .asesorainfo h3,
+          .barrasinfo h3 {
+               width: auto;
+               font-size: 1.5em;
+               text-align: center;
+          }
+
+          .asesorainfo p,
+          .barrasinfo p {
+               font-size: 1.2em;
+               margin: 0px;
+               padding: 0px 20px;
+               text-align: initial;
+          }
+     }
+
+     /* SECTOR CONTACTO */
+
+     @media(max-width:768px) {
+
+          .formcontacto {
+               height: 100vh !important;
+          }
+
+          iframe {
+               height: 30vh;
+               width: 50vh;
+               margin-top: 20px;
+          }
+
+          .conta {
+               height: 20vh !important;
+               width: 100% !important;
+               margin: 0px !important;
+               padding: 0px 20px !important;
+          }
+
+          .wpp img,
+          .email img {
+               height: 3.5vh !important;
+               width: 4.7vh !important;
+          }
+
+          .wpp,
+          .email {
+               height: 10vh;
+               width: auto;
+          }
+
+          .wpp p,
+          .email p {
+               font-size: 1.4em !important;
+          }
+
+          .formpropio input {
+               height: 3vh !important;
+               margin-bottom: 3px !important;
+          }
+
+          .formpropio textarea {
+               height: 23vh !important;
+          }
+     }
+     
+         /* SECTOR FOOTER */
+         @media(max-width:768px) {
+          footer {
+               height: 20vh;
+          }
+
+          footer h4 {
+               font-size: 0.85em;
+               order: -1;
+          }
+
+          footer p {
+               font-size: 0.7em;
+          }
+
+          footer img {
+               height: 10vh;
+               width: 10vh;
+          }
+     }
+}
+
+
+
+/*MEDIA QUERIES 667px */
+
+/*SECTOR HOME/NOSOTROS*/
+
+
+@media (max-width:667px) {
+     header {
+          height: 15vh;
+          position: absolute;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+     }
+
+     header img {
+          margin-left: 20px;
+          height: 8vh;
+          width: 8vh;
+     }
+
+     nav {
+          height: 15vh;
+          width: 80%;
+          padding-left: 0px;
+     }
+
+     ul {
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+          margin: 0px;
+          margin-right: 50px;
+          padding-left: 0px;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          clip-path: circle(0 at center);
+     }
+
+     i {
+          padding-top: 45px;
+          padding-left: 7.5em;
+     }
+
+     label.menu {
+          display: block;
+          font-size: 2em;
+          color: aquamarine;
+          cursor: pointer;
+          justify-items: center;
+          margin-bottom: 0px;
+     }
+
+     #check-menu:checked~ul {
+          display: block;
+          clip-path: circle(100% at center);
+     }
+
+     a {
+          font-size: 1.3em;
+     }
+
+     .hero h1 {
+          font-size: 2.5em;
+     }
+
+     .container1 {
+          height: 50vh;
+     }
+
+     .container1 h2 {
+          font-size: 1.5em;
+     }
+
+     .container1 p {
+          font-size: 1em;
+          padding: 0px 20px;
+     }
+
+     .nosotros {
+          height: 100vh;
+          grid-template-columns: 1fr;
+          grid-template-rows: 50% repeat(4, 1fr);
+          grid-template-areas:
+               "img"
+               "presentacion"
+               "presentacion"
+               "presentacion"
+               "presentacion";
+     }
+
+     .imgbartender {
+          height: 45vh;
+          display: flex;
+          justify-content: center;
+     }
+
+     .imgbartender img {
+          height: 42vh;
+          width: 45vh;
+     }
+
+     .presentacion {
+          display: block;
+          height: 50vh;
+          width: auto;
+          padding-top: 10px;
+          padding-left: 10px;
+     }
+
+     .presentacion h3 {
+          font-size: 0.8em;
+          padding: 0px 5px;
+     }
+
+     .presentacion p {
+          font-size: 0.7em;
+          padding: 0px 5px;
+     }
+
+     .containerins {
+          display: block;
+          height: 60vh;
+          margin: 0px;
+          padding: 0px;
+     }
+
+     .containerins h2 {
+          font-size: 0.75em;
+          text-align: center;
+          margin-top: 10px;
+     }
+
+     .inscribite {
+          flex-direction: column;
+          margin: 0px 50px 0px;
+     }
+
+     .inscribite h3 {
+          font-size: 0.62em;
+          margin: 8px 0px;
+     }
+
+     .inscribite p {
+          font-size: 0.52em;
+          margin: 0px
+     }
+
+     .contactanos,
+     .info,
+     .practica {
+          padding: 0px;
+          margin: 8px 25px;
+     }
+
+     .inscribite img {
+          height: 4vh;
+          width: 4vh;
+     }
+
+     /* SECTOR CURSOS */
+
+     @media (max-width:667px) {
+
+          .contenedorcursos1,
+          .contenedorcurso2,
+          .contenedorcurso3 {
+               height: 70vh;
+               width: auto;
+               flex-direction: column;
+               margin: 0 auto;
+          }
+
+          .cursosimg img {
+               height: 25vh;
+          }
+
+          .curso1,
+          .curso2,
+          .curso3 {
+               height: 35vh;
+               width: auto;
+               margin: 10px;
+          }
+
+          .curso1 h3,
+          .curso2 h3,
+          .curso3 h3 {
+               font-size: 1.1em;
+               text-align: center;
+               margin: 5px;
+               padding: 0px;
+          }
+
+          .curso1 p,
+          .curso2 p,
+          .curso3 p {
+               font-size: 0.7em;
+               margin: 0px;
+               padding: 0px 30px;
+          }
+     }
+
+     /* SECTOR SERVICIOS */
+     @media (max-width:667px) {
+          .container1ser {
+               height: 30vh;
+               width: auto;
+          }
+
+          .container1ser h2 {
+               font-size: 1.6em;
+               padding-left: 10px;
+          }
+
+          .contenedorasesora,
+          .contenedorbarras {
+               height: 70vh;
+               width: auto;
+               flex-direction: column;
+               margin: 0 auto;
+          }
+
+          .asesora img,
+          .barras img {
+               height: 25vh;
+               width: auto;
+          }
+
+          .asesorainfo,
+          .barrasinfo {
+               height: 55vh;
+               width: auto;
+          }
+
+          .asesorainfo h3,
+          .barrasinfo h3 {
+               width: auto;
+               font-size: 1.2em;
+               text-align: center;
+          }
+
+          .asesorainfo p,
+          .barrasinfo p {
+               font-size: 0.8em;
+               margin: 0px;
+               padding: 0px 20px;
+               text-align: initial;
+          }
+     }
+
+     /* SECTOR CONTACTO */
+
+     @media(max-width:667px) {
+
+          .formcontacto {
+               height: 100vh !important;
+          }
+
+          iframe {
+               height: 30vh;
+               width: auto;
+               margin-top: 40px;
+          }
+
+          .conta {
+               height: 20vh !important;
+               width: 100% !important;
+               margin: 0px !important;
+               padding: 0px 20px !important;
+          }
+
+          .wpp img,
+          .email img {
+               height: 3.5vh !important;
+               width: 4.7vh !important;
+          }
+
+          .wpp,
+          .email {
+               height: 10vh;
+               width: auto;
+          }
+
+          .wpp p,
+          .email p {
+               font-size: 1em !important;
+          }
+
+          .formpropio input {
+               height: 3vh !important;
+               margin-bottom: 3px !important;
+          }
+
+          .formpropio textarea {
+               height: 23vh !important;
+          }
+     }
+     /* SECTOR FOOTER */
+
+     @media(max-width:667px) {
+          footer {
+               height: 30vh;
+               flex-direction: column;
+               justify-content: space-evenly;
+          }
+
+          footer h4 {
+               font-size: 0.8em;
+               order: -1;
+          }
+
+          footer p {
+               font-size: 0.65em;
+          }
+
+          footer img {
+               height: 10vh;
+               width: 10vh;
+          }
+     }
+}
+
+/*MEDIA QUERIES 360px */
+    /* SECTOR HOME*/
+@media(max-width:360px) {
+     header img {
+          height: 3.5vh;
+          width: 3.5vh;
+     }
+
+     i {
+          padding-top: 35px;
+     }
+
+     label.menu {
+          font-size: 1.5em;
+     } 
+     .hero {
+          height:75vh;
+     }
+     .hero h1 {
+          font-size: 1.8em;
+     }
+     .container1 {
+          height: 35vh;
+     }
+
+     .container1 h2 {
+          font-size: 1.2em;
+     }
+
+     .container1 p {
+          font-size: 0.7em;
+          padding: 0px 20px;
+     }
+
+     .nosotros {
+          height: 100vh;
+          grid-template-columns: 1fr;
+          grid-template-rows: 35% repeat(4, 1fr);
+          grid-template-areas:
+               "img"
+               "presentacion"
+               "presentacion"
+               "presentacion"
+               "presentacion";
+     }
+
+     .imgbartender {
+          height: 35vh;
+     }
+
+     .imgbartender img {
+          height: 35vh;
+          width: 35vh;
+     }
+
+     .presentacion {
+          height: 65vh;
+          width: auto;
+          padding-top: 5px;
+          padding-left: 5px;
+     }
+
+     .presentacion h3 {
+          font-size: 0.75em;
+          padding: 3px 5px 0px;
+     }
+
+     .presentacion p {
+          font-size: 0.65em;
+          padding: 0px 5px;
+     }
+
+     .containerins {
+          height: 60vh;
+          margin: 0px;
+          padding: 0px;
+     }
+
+     .containerins h2 {
+          font-size: 0.65em;
+          margin-top: 8px;
+     }
+
+     .inscribite {
+          margin: 0px 40px 0px;
+     }
+
+     .inscribite h3 {
+          font-size: 0.6em;
+          margin: 8px 0px;
+     }
+
+     .inscribite p {
+          font-size: 0.45em;
+          margin: 0px
+     }
+
+     .contactanos,
+     .info,
+     .practica {
+          padding: 0px;
+          margin: 8px 25px;
+     }
+
+     .inscribite img {
+          height: 4vh;
+          width: 4vh;
+     }
+}
+    /* SECTOR CURSOS */
+
+    @media (max-width:360px) {
+
+     .contenedorcursos1,
+     .contenedorcurso2,
+     .contenedorcurso3 {
+          height: 65vh;
+     }
+
+     .cursosimg img {
+          height: 25vh;
+          margin: 7px 0px;
+     }
+
+     .curso1,
+     .curso2,
+     .curso3 {
+          height: 35vh;
+          margin: 5px;
+     }
+
+     .curso1 h3,
+     .curso2 h3,
+     .curso3 h3 {
+          font-size: 0.8em;
+          text-align: center;
+          margin: 7px;
+          padding: 0px;
+     }
+
+     .curso1 p,
+     .curso2 p,
+     .curso3 p {
+          font-size: 0.52em;
+          margin: 0px;
+          padding: 0px 20px;
+     }
+}
+
+/* SECTOR SERVICIOS */
+@media (max-width:360px) {
+     .container1ser {
+          height: 25vh;
+     }
+
+     .container1ser h2 {
+          font-size: 1.2em;
+          padding-left: 10px;
+     }
+
+     .contenedorasesora,
+     .contenedorbarras {
+          height: 65vh;
+          width: auto;
+          flex-direction: column;
+          margin: 0 auto;
+     }
+
+     .asesora img,
+     .barras img {
+          height: 22vh;
+          width: auto;
+     }
+
+     .asesorainfo,
+     .barrasinfo {
+          height: 55vh;
+     }
+
+     .asesorainfo h3,
+     .barrasinfo h3 {
+          font-size: 1em;
+     }
+
+     .asesorainfo p,
+     .barrasinfo p {
+          font-size: 0.65em;
+     }
+}
+
+/* SECTOR CONTACTO */
+
+@media(max-width:360px) {
+
+     .formcontacto {
+          height: 100vh !important;
+     }
+
+     iframe {
+          height: 30vh;
+          width: 40vh;
+          margin-top: 20px;
+     }
+
+     .conta {
+          height: 13vh !important;
+          width: 100% !important;
+          margin: 0px !important;
+          padding: 0px 20px !important;
+     }
+
+     .wpp img,
+     .email img {
+          height: 3.2vh !important;
+          width: 4.2vh !important;
+     }
+
+     .wpp,
+     .email {
+          height: 6vh;
+          width: auto;
+     }
+
+     .wpp p,
+     .email p {
+          font-size: 0.75em !important;
+     }
+
+     .formpropio input {
+          height: 4vh !important;
+     }
+
+     .formpropio textarea {
+          height: 20vh !important;
+     }
+     .formpropio button {
+          height: 5vh !important;
+          margin-bottom: 0px !important;
+     }
+     .pbut {
+          font-size: 0.7em;
+          text-align: center;
+          align-items: center;
+          margin: 0px;
+     }
+}

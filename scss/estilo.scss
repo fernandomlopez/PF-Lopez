@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixin";
+@import "animaciones";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(7, 7, 7);
+    color: $white;
+}
+
+@import "header";
+@import "hero";
+@import "nosotros";
+@import "footer";
+@import "cursos";
+@import "servicios";
+@import "contacto";

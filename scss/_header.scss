@@ -1,0 +1,168 @@
+header {
+    @include tamaños (95px,100%);
+    @include flexible(flex, row, space-around, center);
+    position: fixed;
+    z-index: 5;
+    box-shadow: $shabla;
+    margin: 0px;
+
+    .hdr {
+        @include tamaños(70px,70px);
+      }
+
+    nav {
+
+        #check-menu,
+        label.menu {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
+
+            a {
+                @include fuentes($fontnahe, 25px, $oranw);
+                position: relative;
+                text-decoration: none;
+                margin: 3.5px;
+                padding-left: 20px;
+
+                .logoredes {
+                    @include tamaños (4vh, 4vh);
+                    margin-bottom: 3px;
+                }
+
+                &:hover {
+                    color: $white;
+                }
+
+                &::before {
+                    content: "";
+                    @include tamaños (3px,0%);
+                    background: $sky;
+                    position: absolute;
+                    left: 0;
+                    bottom: -12px;
+                    transition: 0.4s ease-out;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        height: 10vh;
+        position: absolute;
+        justify-content: space-evenly;
+
+        .hdr {
+            margin-left: 15px;
+            @include tamaños (8vh, 8vh);
+        }
+
+        nav {
+            @include tamaños (15vh, 80%);
+            padding-left: 0px;
+
+            #check-menu:checked~ul {
+                display: block;
+                clip-path: circle(100% at center);
+            }
+
+            label.menu {
+                display: block;
+                font-size: 2em;
+                color: aquamarine;
+                cursor: pointer;
+                margin-bottom: 0px;
+
+                i {
+                    padding-top: 60px;
+                    padding-left: 16em;
+                }
+
+            }
+
+            ul {
+                box-shadow: $shabla;
+                margin: 0px;
+                margin-right: 50px;
+                padding-left: 0px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                clip-path: circle(0 at center);
+
+                li {
+                    .logoredes {
+                        @include tamaños (3.5vh, 3.5vh);
+
+                        a {
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:667px) {
+    header {
+
+        height: 15vh;
+
+        .hdr {
+            margin-left: 20px;
+        }
+
+        nav {
+
+            label.menu {
+
+                i {
+                    padding-top: 45px;
+                    padding-left: 7.5em;
+                }
+            }
+
+            ul {
+                a {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:360px) {
+    header {
+
+        .hdr {
+            margin-left: 30px;
+        }
+
+        nav {
+
+            label.menu {
+
+                font-size: 1.5em;
+
+                i {
+                    padding-top: 40px;
+                }
+            }
+        }
+    }
+}

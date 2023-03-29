@@ -1,0 +1,48 @@
+.hero {
+    height: 100vh;
+    margin: 0px;
+    @include flexible(flex, row, center, center);
+    text-align: center;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/foto1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        @include fuentes ($fontnahe, 3.8em, $white);
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px) {
+    .hero {
+        height: 90vh;
+
+        h1 {
+            font-size: 3em;
+        }
+    }
+}
+
+@media (max-width:667px) {
+    .hero {
+        height: 80vh;
+
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .hero {
+        height: 75vh;
+
+        h1 {
+            font-size: 1.8em;
+        }
+    }
+}

@@ -1155,7 +1155,7 @@ main section .contenedorbarras .barrasinfo p {
 @media (max-width: 768px) {
   main section .container1ser {
     height: 30vh;
-    width: auto;
+    width: 100%;
   }
   main section .container1ser h2 {
     font-size: 1.9em;
@@ -1163,17 +1163,17 @@ main section .contenedorbarras .barrasinfo p {
   }
   main section .contenedorasesora {
     height: 70vh;
-    width: auto;
+    width: 100%;
     margin: 0 auto;
     flex-direction: column;
   }
   main section .contenedorasesora .asesora img {
     height: 30vh;
-    width: auto;
+    width: 100%;
   }
   main section .contenedorasesora .asesorainfo {
     height: 40vh;
-    width: auto;
+    width: 100%;
     align-items: center;
   }
   main section .contenedorasesora .asesorainfo h3 {
@@ -1188,17 +1188,17 @@ main section .contenedorbarras .barrasinfo p {
   }
   main section .contenedorbarras {
     height: 70vh;
-    width: auto;
+    width: 100%;
     margin: 0 auto;
     flex-direction: column;
   }
   main section .contenedorbarras .barras img {
     height: 30vh;
-    width: auto;
+    width: 100%;
   }
   main section .contenedorbarras .barrasinfo {
     height: 40vh;
-    width: auto;
+    width: 100%;
     align-items: center;
   }
   main section .contenedorbarras .barrasinfo h3 {
@@ -1218,11 +1218,11 @@ main section .contenedorbarras .barrasinfo p {
   }
   main section .contenedorasesora .asesora img {
     height: 25vh;
-    width: auto;
+    width: 100%;
   }
   main section .contenedorasesora .asesorainfo {
     height: 55vh;
-    width: auto;
+    width: 100%;
     align-items: center;
   }
   main section .contenedorasesora .asesorainfo h3 {
@@ -1237,11 +1237,11 @@ main section .contenedorbarras .barrasinfo p {
   }
   main section .contenedorbarras .barras img {
     height: 28vh;
-    width: auto;
+    width: 100%;
   }
   main section .contenedorbarras .barrasinfo {
     height: 55vh;
-    width: auto;
+    width: 100%;
     align-items: center;
   }
   main section .contenedorbarras .barrasinfo h3 {
@@ -1265,13 +1265,13 @@ main section .contenedorbarras .barrasinfo p {
   }
   main section .contenedorasesora {
     height: 65vh;
-    width: auto;
+    width: 100%;
     flex-direction: column;
     margin: 0 auto;
   }
   main section .contenedorasesora .asesora img {
     height: 22vh;
-    width: auto;
+    width: 100%;
   }
   main section .contenedorasesora .asesorainfo {
     height: 55vh;
@@ -1284,13 +1284,13 @@ main section .contenedorbarras .barrasinfo p {
   }
   main section .contenedorbarras {
     height: 65vh;
-    width: auto;
+    width: 100%;
     flex-direction: column;
     margin: 0 auto;
   }
   main section .contenedorbarras .barras img {
     height: 22vh;
-    width: auto;
+    width: 100%;
   }
   main section .contenedorbarras .barrasinfo {
     height: 55vh;

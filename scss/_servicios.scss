@@ -74,7 +74,7 @@ main {
     main {
         section {
             .container1ser {
-                @include tamaños (30vh, auto);
+                @include tamaños (30vh, 100%);
 
                 h2 {
                     font-size: 1.9em;
@@ -83,7 +83,7 @@ main {
             }
 
             .contenedorasesora {
-                @include tamaños (70vh, auto);
+                @include tamaños (70vh, 100%);
                 margin: 0 auto;
                 flex-direction: column;
 
@@ -94,7 +94,7 @@ main {
                 }
 
                 .asesorainfo {
-                    @include tamaños (40vh, auto);
+                    @include tamaños (40vh, 100%);
                     align-items: center;
 
                     h3 {
@@ -112,7 +112,7 @@ main {
             }
 
             .contenedorbarras {
-                @include tamaños (70vh, auto);
+                @include tamaños (70vh, 100%);
                 margin: 0 auto;
                 flex-direction: column;
 
@@ -123,7 +123,7 @@ main {
                 }
 
                 .barrasinfo {
-                    @include tamaños (40vh, auto);
+                    @include tamaños (40vh, 100%);
                     align-items: center;
 
                     h3 {
@@ -161,7 +161,7 @@ main {
                 }
 
                 .asesorainfo {
-                    @include tamaños (55vh, auto);
+                    @include tamaños (55vh, 100%);
                     align-items: center;
 
                     h3 {
@@ -186,7 +186,7 @@ main {
                 }
 
                 .barrasinfo {
-                    @include tamaños (55vh, auto);
+                    @include tamaños (55vh, 100%);
                     align-items: center;
 
                     h3 {
@@ -222,7 +222,7 @@ main {
             }
 
             .contenedorasesora {
-                @include tamaños (65vh, auto);
+                @include tamaños (65vh, 100%);
                 flex-direction: column;
                 margin: 0 auto;
 
@@ -246,7 +246,7 @@ main {
             }
 
             .contenedorbarras {
-                @include tamaños (65vh, auto);
+                @include tamaños (65vh, 100%);
                 flex-direction: column;
                 margin: 0 auto;
 

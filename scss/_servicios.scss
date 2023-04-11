@@ -89,7 +89,7 @@ main {
 
                 .asesora {
                     img {
-                        @include tamaños (30vh, auto);
+                        @include tamaños (30vh, 100%);
                     }
                 }
 
@@ -118,7 +118,7 @@ main {
 
                 .barras {
                     img {
-                        @include tamaños (30vh, auto);
+                        @include tamaños (30vh, 100%);
                     }
                 }
 
@@ -156,7 +156,7 @@ main {
             .contenedorasesora {
                 .asesora {
                     img {
-                        @include tamaños (25vh, auto);
+                        @include tamaños (25vh, 100%);
                     }
                 }
 
@@ -181,7 +181,7 @@ main {
             .contenedorbarras {
                 .barras {
                     img {
-                        @include tamaños (28vh, auto);
+                        @include tamaños (28vh, 100%);
                     }
                 }
 
@@ -228,7 +228,7 @@ main {
 
                 .asesora {
                     img {
-                        @include tamaños (22vh, auto);
+                        @include tamaños (22vh, 100%);
                     }
                 }
 
@@ -252,7 +252,7 @@ main {
 
                 .barras {
                     img {
-                        @include tamaños (22vh, auto);
+                        @include tamaños (22vh, 100%);
                     }
                 }
 
